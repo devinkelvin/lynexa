@@ -203,13 +203,13 @@ const Testimonials = () => {
                                         animation: direction === 'next' ? 'slideInRight 0.6s ease-out' : 'slideInLeft 0.6s ease-out'
                                     }}
                                 >
-                                    <div className="grid lg:grid-cols-5 gap-8 p-8 md:p-12 bg-gradient-to-br from-white/5 to-white/0 border border-white/10 backdrop-blur-xl rounded-3xl">
+                                    <div className="grid lg:grid-cols-5 gap-8 p-8 md:p-12 bg-linear-to-br from-white/5 to-white/0 border border-white/10 backdrop-blur-xl rounded-3xl">
                                         {/* Left Column - Client Info (2 cols) */}
                                         <div className="lg:col-span-2 space-y-6">
                                             {/* Avatar & Basic Info */}
                                             <div className="flex items-start gap-4">
                                                 <div
-                                                    className="w-20 h-20 rounded-2xl flex items-center justify-center text-2xl font-black text-white flex-shrink-0"
+                                                    className="w-20 h-20 rounded-2xl flex items-center justify-center text-2xl font-black text-white shrink-0"
                                                     style={{
                                                         background: `linear-gradient(135deg, ${currentTestimonial.color}, ${currentTestimonial.color}dd)`,
                                                         boxShadow: `0 20px 60px ${currentTestimonial.color}40`
