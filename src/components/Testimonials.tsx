@@ -184,7 +184,7 @@ const Testimonials = () => {
                         </p>
                     </div>
 
-                    {/* Main Testimonial Carousel */}
+                    
                     <div
                         className="mb-16"
                         style={{
