@@ -142,7 +142,7 @@ npm/yarn/pnpm
 Installation
 bash
 # Clone repository
-git clone https://github.com/yourusername/enterprise-tech-landing.git
+git clone https://github.com/devinkelvin/lynexa.git
 
 # Navigate to project
 cd enterprise-tech-landing
