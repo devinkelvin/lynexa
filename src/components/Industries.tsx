@@ -423,12 +423,12 @@ const Industries = () => {
                       </span>{" "}
                       {industries[activeIndustry].caseStudy.result}
                     </p>
-                    <div className="flex items-center justify-between text-xs">
-                      <div className="text-sm text-gray-400">
+                    <div className="grid items-center md:grid-cols-2 xs:grid-cols-1 text-xs gap-3">
+                      <div className="text-xs text-gray-400">
                         Verified Results • Enterprise Client
                       </div>
                       <div
-                        className="px-2 py-1 rounded-full text-xs font-bold"
+                        className="px-2 py-1 rounded-full text-xs font-bold w-fit mx-auto md:ml-auto md:mr-0 mt-2 md:mt-0"
                         style={{
                           backgroundColor: `${industries[activeIndustry].color}20`,
                           color: industries[activeIndustry].color,

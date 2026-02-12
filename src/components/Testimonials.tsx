@@ -312,7 +312,7 @@ const Testimonials = () => {
                                             </blockquote>
 
                                             {/* Trust Indicators */}
-                                            <div className="grid grid-cols-3 gap-4 pt-8 border-t border-white/10">
+                                            <div className="grid md:grid-cols-3 xs:grid-cols-1 gap-4 pt-8 border-t border-white/10">
                                                 {[
                                                     { icon: <Building className="w-5 h-5" />, label: "Enterprise Client" },
                                                     { icon: <Award className="w-5 h-5" />, label: "Industry Leader" },
