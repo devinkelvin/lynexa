@@ -316,7 +316,7 @@ const CaseStudies = () => {
                             }}
                         >
                             {/* Results Grid */}
-                            <div className="grid grid-cols-2 gap-4 mb-8">
+                            <div className="grid md:grid-cols-2 xs:grid-cols-1 gap-4 mb-8">
                                 {currentCase.results.map((result, idx: number) => (
                                     <div
                                         key={idx}

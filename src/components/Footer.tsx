@@ -337,7 +337,7 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 1.2 }}
             whileHover={{ y: -5, scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="fixed bottom-8 right-8 p-4 rounded-2xl bg-[#76ebda] text-black shadow-xl shadow-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 border border-white/20 backdrop-blur-sm group"
+            className="fixed bottom-8 right-8 p-4 rounded-2xl bg-[#76ebda] text-black shadow-xl shadow-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 border border-white/20 backdrop-blur-sm group z-50"
           >
             <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform duration-300" />
             <span className="absolute -top-10 right-0 px-3 py-2 bg-slate-800 rounded-lg text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">

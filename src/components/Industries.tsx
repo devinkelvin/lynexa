@@ -322,7 +322,7 @@ const Industries = () => {
               }}
             />
 
-            <div className="relative z-10 grid lg:grid-cols-2 gap-12">
+            <div className="relative z-10 grid lg:grid-cols-2 gap-12 px-4 md:px-8 py-10">
               {/* Left Column */}
               <div>
                 {/* Industry Header */}
