@@ -63,68 +63,71 @@ const LoadingScreen = () => (
 )
 
 const Home = () => {
-    const containerRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
 
-    useEffect(() => {
-        // Initialize GSAP animations
-        const ctx = gsap.context(() => {
-            // Parallax effect for floating elements
-            gsap.to('.floating-element', {
-                y: 30,
-                duration: 2,
-                repeat: -1,
-                yoyo: true,
-                ease: 'power1.inOut',
-                stagger: 0.2
-            })
+  useEffect(() => {
+    // Initialize GSAP animations
+    const ctx = gsap.context(() => {
+      // Parallax effect for floating elements
+      gsap.to('.floating-element', {
+        y: 30,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: 'power1.inOut',
+        stagger: 0.2
+      })
 
-            // Scroll-triggered animations
-            gsap.utils.toArray<HTMLElement>('.scroll-reveal').forEach((element) => {
-                gsap.from(element, {
-                    scrollTrigger: {
-                        trigger: element,
-                        start: 'top 80%',
-                        toggleActions: 'play none none reverse'
-                    },
-                    y: 50,
-                    opacity: 0,
-                    duration: 1,
-                    ease: 'power3.out'
-                })
-            })
-        }, containerRef)
+      // Scroll-triggered animations
+      gsap.utils.toArray<HTMLElement>('.scroll-reveal').forEach((element) => {
+        gsap.from(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse'
+          },
+          y: 50,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out'
+        })
+      })
+    }, containerRef)
 
-        return () => ctx.revert()
-    }, [])
+    return () => ctx.revert()
+  }, [])
 
-    return (
-        <>
-            {/* <Head>
+  return (
+    <>
+      {/* <Head>
                 <title>Lynexa Innovations | Technology Innovation Partner</title>
                 <meta name="description" content="Transforming visionary ideas into tangible technological solutions. Premier technology innovation partner specializing in MVPs, scalable applications, and enterprise-grade systems." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head> */}
 
-            <div ref={containerRef} className="relative bg-gray-900 text-white overflow-hidden">
+      <div ref={containerRef} className="relative bg-gray-900 text-white overflow-hidden">
 
-                <div className="relative z-10">
-                    <Navbar />
-                    <Suspense fallback={<LoadingScreen />}>
-                        <Hero />
-                        <ServicesShowcase />
-                        <Industries />
-                        <Methodology />
-                        <CaseStudies />
-                        <TechnologyStack />
-                        <Testimonials />
-                        <EnterpriseCTA />
-                        <Footer />
-                    </Suspense>
-                </div>
-            </div>
-        </>
-    )
+        <div className="relative z-10">
+          {/* <Navbar />
+          <Suspense fallback={<LoadingScreen />}>
+            <Hero />
+            <ServicesShowcase />
+            <Industries />
+            <Methodology />
+            <CaseStudies />
+            <TechnologyStack />
+            <Testimonials />
+            <EnterpriseCTA />
+            <Footer />
+          </Suspense> */}
+          <div className="container">
+            
+          </div>
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default Home
