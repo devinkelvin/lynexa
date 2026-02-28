@@ -8,46 +8,6 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 import dynamic from 'next/dynamic'
 
-import Navbar from '@/components/Navbar'
-// import Hero from '@/components/Hero'
-
-// import ServicesShowcase from '@/components/ServicesShowcase'
-// import Industries from '@/components/Industries'
-// import Methodology from '@/components/Methodology'
-// import CaseStudies from '@/components/CaseStudies'
-// import TechnologyStack from '@/components/TechnologyStack'
-// import Testimonials from '@/components/Testimonials'
-// import EnterpriseCTA from '@/components/EnterpriseCTA'
-// import Footer from '@/components/Footer'
-const Hero = dynamic(() => import('@/components/Hero'), {
-  ssr: false, // Disable server-side rendering for this component if necessary
-});
-const ServicesShowcase = dynamic(() => import('@/components/ServicesShowcase'), {
-  ssr: false,
-});
-const Industries = dynamic(() => import('@/components/Industries'), {
-  ssr: false,
-});
-const Methodology = dynamic(() => import('@/components/Methodology'), {
-  ssr: false,
-});
-const CaseStudies = dynamic(() => import('@/components/CaseStudies'), {
-  ssr: false,
-});
-const TechnologyStack = dynamic(() => import('@/components/TechnologyStack'), {
-  ssr: false,
-});
-const Testimonials = dynamic(() => import('@/components/Testimonials'), {
-  ssr: false,
-});
-const EnterpriseCTA = dynamic(() => import('@/components/EnterpriseCTA'), {
-  ssr: false,
-});
-const Footer = dynamic(() => import('@/components/Footer'), {
-  ssr: false,
-});
-
-gsap.registerPlugin(ScrollTrigger)
 
 
 
@@ -109,18 +69,7 @@ const Home = () => {
       <div ref={containerRef} className="relative bg-gray-900 text-white overflow-hidden">
 
         <div className="relative z-10">
-          {/* <Navbar />
-          <Suspense fallback={<LoadingScreen />}>
-            <Hero />
-            <ServicesShowcase />
-            <Industries />
-            <Methodology />
-            <CaseStudies />
-            <TechnologyStack />
-            <Testimonials />
-            <EnterpriseCTA />
-            <Footer />
-          </Suspense> */}
+          
           <div className="container">
             
           </div>
